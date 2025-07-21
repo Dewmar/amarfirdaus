@@ -1,0 +1,387 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    background-color: #ff004c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #e6003a;
+    transform: scale(1.1);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff004c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff004c;
+    border-bottom: 2px solid #ff004c;
+}
+
+.social-icons {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+main {
+    padding: 40px;
+}
+
+/* Simplified Tabs styles with thinner border and gradient effect */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: #121212;
+    position: relative;
+}
+
+.tabs::before,
+.tabs::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: linear-gradient(to right, #121212, transparent);
+}
+
+.tabs::before {
+    left: 0;
+}
+
+.tabs::after {
+    right: 0;
+}
+
+.tab {
+    padding: 10px 20px;
+    background: #1e1e1e;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 5px 5px 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tab.active {
+    background: #ff004c;
+    color: #fff;
+    font-weight: 700;
+}
+
+.tab:hover {
+    background: #333;
+    color: #fff;
+}
+
+.breadcrumb {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0 0 40px;
+    color: #ff004f; /* Change h2 color */
+}
+
+.about h2 {
+	color: #FFFFFF;
+	font-size: 28px;
+}
+
+.section-header h2 {
+	color: #ff004f;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 80px 0 20px; /* Increased top margin */
+    padding-top: 20px; /* Added padding to the top */
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+	margin-top: 50px;
+}
+
+/* Header */
+.template-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.template-header h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.template-header p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Grid Layout */
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.template-item {
+  text-align: center;
+  background: transparent;
+  border-radius: 12px;
+  padding: 0px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.template-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.template-item img {
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Software label */
+.software-label {
+  background-color: #ff004c;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin: 6px 0;
+}
+
+/* Template text spacing refined */
+.template-item h3 {
+  font-size: 16px;
+  margin: 6px 0 2px 0;
+  color: #222;
+}
+
+.template-item p {
+  font-size: 13px;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* See More Link */
+.see-more {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.see-more a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.see-more a:hover {
+  color: #ff004c;
+  border-color: #ff004c;
+}
+
+/* JavaScript-based Lightbox */
+.lightbox {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.lightbox img:hover {
+  transform: scale(1.02);
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    padding: 50px 20px;
+}
+
+footer h2 span {
+    color: #ff004c;
+}
+
+.contact-info a {
+    color: #ff004c;
+    text-decoration: none;
+}
+
+/* Footer Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+form input, form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff004c;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social-icons img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+footer p span {
+    color: #ff004c;
+}
+
+
